@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/recipedetail.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- 탭 메뉴 -->
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <div id="userMenu">
+            <ul class="list_menu">
+                <li class="menu_join" onclick="location.href='join.html'">회원가입</li>
+                <li class="menu_login" onclick="location.href='login.html'">로그인</li>
+            </ul>
+        </div>
+
+        <div class="headerLogo">
+            <img src="img/logo.png">
+        </div>
+
+        <div class="category">
+            <div class="c_menu">
+                <div class="menulist">
+                    <div class="list">
+                        <ul class="listName">
+                            <li class="C1"><a href="#"><span><img class="listImg" src="img/list.png"></span>전체 카테고리</a>
+                                <ul class="All">
+                                    <li><a href="#"><img src="img/korea.png" class="food">한식</a></li>
+                                    <li><a href="#"><img src="img/usa.png" class="food">양식</a></li>
+                                    <li><a href="#"><img src="img/japan.png" class="food">일식</a></li>
+                                    <li><a href="#"><img src="img/china.png" class="food">중식</a></li>
+                                    <li><a href="#"><img src="img/world.png" class="food">기타</a></li>
+                                </ul>
+                            </li>
+                            <span class="bar"> | </span>
+                            <li class="C2">TOP 10 레시피</li>
+                            <span class="bar"> | </span>
+                            <li class="C3">TV  속 레시피</li>
+                            <span class="bar"> | </span>
+                            <li class="C4">사용자 레시피</li>
+                            <span class="bar"> | </span>
+                            <li class="C5">단일 상품</li>
+                            <span class="bar"> | </span>
+                            <li class="C6" onclick="location.href='notice.html'">고객센터</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end-->
+
+    <div class="main">
+        <div class="main_content" style="opacity: 1;">
+            <div class="main_section">
+                <div class="section_view">
+                    <div class="inner_view">
+                        <div class="recipeImg">
+                            <img src="img/detail.jpg" class="bg">
+                        </div>
+                        <p class="recipe_name">
+                            <strong class="name"><강식당2> "김치밥이 피오씁니다." </strong>
+                        </p>
+                        <div class="recipe_info">
+                            <dl class="list">
+                                <dt class="list_count">조회수</dt>
+                                <dd class="count_value">20000</dd>
+                            </dl>
+                            <dl class="list">
+                                <dt class="list_count">추천수</dt>
+                                <dd class="count_value">9999</dd>
+                            </dl>
+                            <dl class="list">
+                                <dt class="list_count">영양성분</dt>
+                                <dd class="count_value">
+                                    <table style="border-collapse: collapse;">
+                                        <tr style="border-bottom:2px solid #2f2f30;" id="tabletr">
+                                            <th id="viewtable">재료</th>
+                                            <th id="viewtable">량</th>
+                                            <th id="viewtable">칼로리</th>
+                                        </tr>
+                                        <tr id="showtable">
+                                           <td>다진김치</td>
+                                           <td>1/3컵 (80g)</td>
+                                           <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>피자치즈</td>
+                                            <td>1/2컵(50g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>대파</td>
+                                            <td>1/2컵(15g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>밥</td>
+                                            <td>1공기(200g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>옥수수콘</td>
+                                            <td>1/2 컵(30g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>김가루</td>
+                                            <td>1/2컵(3g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>진간장</td>
+                                            <td>1큰술(10ml)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>황설탕</td>
+                                            <td>1작은술(3g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>고춧가루</td>
+                                            <td>1큰술(5g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>식용유</td>
+                                            <td>1큰술(12ml)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                        <tr id="showtable">
+                                            <td>깨</td>
+                                            <td>1꼬집(1g)</td>
+                                            <td>kcal</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <dl class="list">
+                                <dt class="list_count">상품</dt>
+                                <dd class="count_value">
+                                        <p>
+                                        <input type="checkbox" name="product" id="source" value="source" class="check">
+                                        <label for = "source">샘표 - 맛간장</label>
+                                        <div class="option">
+                                            <span class="count"><button type="button" class="btn down">수량내리기</button> 
+                                                <input type="number" readonly="readonly" onfocus="this.blur()" class="inp">
+                                                <button type="button" class="btn up">수량올리기</button>
+                                            </span> 
+                                        </div> 
+                                        </p>
+
+                                        <p>
+                                        <input type="checkbox" name="product" id="con" value="con"  class="check">
+                                        <label for="con">동원 - 골든 스위트콘</label>
+                                        <div class="option">
+                                            <span class="count"><button type="button" class="btn down">수량내리기</button> 
+                                                <input type="number" readonly="readonly" onfocus="this.blur()" class="inp">
+                                                <button type="button" class="btn up">수량올리기</button>
+                                            </span> 
+                                        </div> 
+                                        </p>
+
+                                        <p>
+                                        <input type="checkbox" name="product" id="sugar" value="sugar"  class="check">
+                                        <label for="sugar">백설 - 자일로스 하얀 설탕</label>
+                                        <div class="option">
+                                            <span class="count"><button type="button" class="btn down">수량내리기</button> 
+                                                <input type="number" readonly="readonly" onfocus="this.blur()" class="inp">
+                                                <button type="button" class="btn up">수량올리기</button>
+                                            </span> 
+                                        </div> 
+                                        </p>
+
+                                        <p>
+                                        <input type="checkbox" name="product" id="cheese" value="cheese"  class="check">
+                                        <label for="cheese">서울우유 - 체다슬라이스 치즈</label>
+                                        <div class="option">
+                                            <span class="count"><button type="button" class="btn down">수량내리기</button> 
+                                                <input type="number" readonly="readonly" onfocus="this.blur()" class="inp">
+                                                <button type="button" class="btn up">수량올리기</button>
+                                            </span> 
+                                        </div> 
+                                        </p>
+                                </dd>
+                            </dl>
+
+
+                        </div>
+                    </div>
+
+                    <div class="inner_view1">
+                        <div class="inner_opt">
+                            <div class="in_option">
+                                <div class="total">
+                                    <div class="price">
+                                        <strong class="tit">총 상품금액 : </strong>
+                                        <span class="sum">30000</span>
+                                        <span class="won">원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <input type="button" class="Incart" value="장바구니">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
